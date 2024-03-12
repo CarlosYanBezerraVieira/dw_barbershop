@@ -10,6 +10,7 @@ sealed class ColorsConstants {
 sealed class ImagesConstants {
   static const logo = 'assets/images/imgLogo.png';
   static const background = 'assets/images/background_image_chair.jpg';
+  static const avatart = 'assets/images/avatar.jpg';
 }
 
 sealed class FontsConstants {
