@@ -13,7 +13,8 @@ class UserLoginServiceImpl implements UserLoginService {
   UserLoginServiceImpl({required this.userRepository});
 
   @override
-  Future<Either<Exception, Nil>> execute(String email, String password) async {
+  Future<Either<ServiceExceptions, Nil>> execute(
+      String email, String password) async {
     final loginResult = await userRepository.login(email, password);
 
     switch (loginResult) {
